@@ -112,8 +112,6 @@
 		80D6A4991977670C008E5221 /* Homework.1 */ = {
 			isa = PBXGroup;
 			children = (
-				80D6A4A21977670C008E5221 /* cardGameAppDelegate.h */,
-				80D6A4A31977670C008E5221 /* cardGameAppDelegate.m */,
 				80D6A4A51977670C008E5221 /* Main.storyboard */,
 				80D6A4A81977670C008E5221 /* cardGameViewController.h */,
 				80D6A4A91977670C008E5221 /* cardGameViewController.m */,
@@ -126,6 +124,8 @@
 		80D6A49A1977670C008E5221 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				80D6A4A21977670C008E5221 /* cardGameAppDelegate.h */,
+				80D6A4A31977670C008E5221 /* cardGameAppDelegate.m */,
 				80D6A49B1977670C008E5221 /* Homework.1-Info.plist */,
 				80D6A49C1977670C008E5221 /* InfoPlist.strings */,
 				80D6A49F1977670C008E5221 /* main.m */,
@@ -457,6 +457,7 @@
 				80D6A4C41977670C008E5221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80D6A4C51977670C008E5221 /* Build configuration list for PBXNativeTarget "Homework.1Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +466,7 @@
 				80D6A4C71977670C008E5221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
