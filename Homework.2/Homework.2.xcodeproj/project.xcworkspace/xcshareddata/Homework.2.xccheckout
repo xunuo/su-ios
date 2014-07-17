@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5C4AA5E7-BC31-430B-97CA-7857C9FD3546</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Homework.2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7650A906-1BF0-448B-8B9D-141920DC28C8</key>
+		<string>https://github.com/xunuo/su-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Homework.2/Homework.2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7650A906-1BF0-448B-8B9D-141920DC28C8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xunuo/su-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7650A906-1BF0-448B-8B9D-141920DC28C8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7650A906-1BF0-448B-8B9D-141920DC28C8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>su-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
