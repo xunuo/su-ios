@@ -1,14 +1,14 @@
 //
-//  CardGameAppDelegate.m
+//  cardGameAppDelegate.m
 //  Homework.2
 //
 //  Created by snow on 14-7-17.
 //  Copyright (c) 2014年 snow. All rights reserved.
 //
 
-#import "CardGameAppDelegate.h"
+#import "cardGameAppDelegate.h"
 
-@implementation CardGameAppDelegate
+@implementation cardGameAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

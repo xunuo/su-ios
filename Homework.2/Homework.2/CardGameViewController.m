@@ -7,23 +7,61 @@
 //
 
 #import "CardGameViewController.h"
+#import "PlayingCardDeck.h"
 
 @interface CardGameViewController ()
+
+    @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
+
+    @property (nonatomic) int flipCount;
+
+    @property (strong, nonatomic) PlayingCardDeck *playingCardDeck;
 
 @end
 
 @implementation CardGameViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+    - (PlayingCardDeck *)playingCardDeck{
+        if(!_playingCardDeck) _playingCardDeck = [self createPlayingCardDeck];
+        return _playingCardDeck;
+    }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+    - (PlayingCardDeck *)createPlayingCardDeck{
+        return [[PlayingCardDeck alloc] init];
+    }
+
+    -(void)setFlipCount:(int)flipCount{
+        
+        _flipCount = flipCount;
+        
+        self.flipsLabel.text = [NSString stringWithFormat:@"Flips : %d", self.flipCount];
+        
+        NSLog( @"flipCount changed to %d", self.flipCount );
+        
+    }
+
+    - (IBAction)touchCardButton:(UIButton *)sender {
+        
+        if([sender.currentTitle length]){
+            [sender setBackgroundImage:[UIImage imageNamed:@"cardback"] forState:UIControlStateNormal];
+            [sender setTitle:@"" forState:UIControlStateNormal];
+        } else {
+            Card *randomCard = [self.playingCardDeck drawRandomCard];
+            // 保护机制，判断不为nil
+            if(randomCard){
+                [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"] forState:UIControlStateNormal];
+                [sender setTitle:randomCard.contents forState:UIControlStateNormal];
+            }
+        }
+        
+         NSLog( @"Remaining cards number: %lu", (unsigned long)[self.playingCardDeck.cards count] );
+        
+            if( [self.playingCardDeck.cards count] == 0 ){
+                self.flipCount = 0;
+                _playingCardDeck = [self createPlayingCardDeck];
+            }
+        
+        self.flipCount++;
+    }
 
 @end

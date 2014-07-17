@@ -1,5 +1,5 @@
 //
-//  CardGameAppDelegate.h
+//  cardGameAppDelegate.h
 //  Homework.2
 //
 //  Created by snow on 14-7-17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CardGameAppDelegate : UIResponder <UIApplicationDelegate>
+@interface cardGameAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CardGameAppDelegate.h"
+#import "cardGameAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([CardGameAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([cardGameAppDelegate class]));
     }
 }
