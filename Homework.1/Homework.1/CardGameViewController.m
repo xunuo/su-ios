@@ -30,6 +30,14 @@
         return [[PlayingCardDeck alloc] init];
     }
 
+    - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+    {
+        if (event.type == UIEventSubtypeMotionShake)
+        {
+            NSLog(@"Shake Began");
+        }
+    }
+
     -(void)setFlipCount:(int)flipCount{
         
         _flipCount = flipCount;
