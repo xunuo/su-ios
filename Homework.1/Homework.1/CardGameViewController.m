@@ -11,6 +11,8 @@
 
 @interface CardGameViewController ()
 
+    @property (weak, nonatomic) IBOutlet UIButton *cardButton;
+
     @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 
     @property (nonatomic) int flipCount;
@@ -35,6 +37,8 @@
         if (event.type == UIEventSubtypeMotionShake)
         {
             NSLog(@"Shake Began");
+            
+            [_cardButton sendActionsForControlEvents: UIControlEventTouchUpInside];
         }
     }
 
@@ -62,12 +66,13 @@
             }
         }
         
-         NSLog( @"Remaining cards number: %lu", (unsigned long)[self.playingCardDeck.cards count] );
+        NSLog( @"Remaining cards number: %lu", (unsigned long)[self.playingCardDeck.cards count] );
         
-            if( [self.playingCardDeck.cards count] == 0 ){
-                self.flipCount = 0;
-                _playingCardDeck = [self createPlayingCardDeck];
-            }
+        // 重新洗牌 重新技术
+        if( [self.playingCardDeck.cards count] == 0 ){
+            self.flipCount = 0;
+            _playingCardDeck = [self createPlayingCardDeck];
+        }
         
         self.flipCount++;
     }
